@@ -96,8 +96,6 @@ int main()
                     perror("epoll ctl error");
                     continue;
                 }
-                // 输出一下客户端的IP
-                printf("%s正在连接...\n", client_addr.sin_addr.s_addr);
 
                 Client client;
                 client.sockfd = cfd;
@@ -134,7 +132,7 @@ int main()
                     */
                     if (clients[fd].name == "")
                     {
-                        clients[fd].name == msg;
+                        clients[fd].name = msg;
                     }
                     else
                     {
