@@ -13,7 +13,7 @@
 #include <netinet/in.h>
 #include <map>
 
-#define DEFAULT_PORT 8888
+#define DEFAULT_PORT 8086
 
 
 #endif
